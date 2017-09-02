@@ -1,0 +1,29 @@
+header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  background-color:
+}
+
+.header-nav span {
+  display: inline-block;
+}
+/*
+.header-nav li {
+  display: inline;
+}*/
+
+h1.header-title {
+  color: MediumAquamarine;
+}
+
+h1.footer-title {
+  color: white;
+  border-right: 1px solid white;
+}
