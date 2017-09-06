@@ -1,29 +1,32 @@
-.header {
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: bold;
+
+/*Headerの残りタスク*/
+/*1. 左側ロゴタイトルを上下中音揃え*/
+header {
+  font-family: Verdana;   /**/
+  font-size: 14px;    /**/
+  font-weight: bold;    /**/
 
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
   border-bottom: 1px solid black;
-  border: 1px solid red;
-  align-items: center;
-}
-
-.header img {
-
-}
-
-.header-title {
-
-}
-.header-title {
-  color: MediumAquamarine;
-  width: 600px;
     border: 1px solid red;
+  align-items: center;
+
+  background-color: white;
+  position: fixed;
+  z-index: 5;
 }
+.logo-title {
+  color: MediumAquamarine;
+  display: inline;
+  border: 1px solid red;
+}
+
 
 .header-nav {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .header-nav span {
@@ -31,51 +34,158 @@
 }
 
 
+
+/*?????????*/
+/*-------------------------- Content --------------------------*/
 .content {
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-start;
 
-  border: 1px solid red;
+  padding: 100px;
+  /*border: 1px solid red;*/
 }
-.content h1 {
+.content p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
 }
-.content h1.picture-headlines {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
+/*- Column style -*/
+.column {
+  display: flex;
+  align-content: flex-start;
 }
-.content h1.main-story {
+.column.main-col {
+  display: flex;
+  flex-wrap: wrap;
+  width: 630px;   /**/
+  justify-content: center;
+  align-items: flex-start;
+  /*border: 1px solid red;*/
+}
+.column.sub-col {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;   /**/
+  justify-content: center;
+  align-items: flex-start;
+  /*border: 1px solid red;*/
+}
+.column.sidebar {
+  display: flex;
+  width: 240px;   /**/
+  align-items: flex-start;
+  /*border: 1px solid red;*/
+}
+/*- Story style -*/
+.content .main-pict-story h1 {    /**/
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
+  text-align: left;
+  display: flex;
+  width: 630px;
+  height: 300px;
   color: white;
+}
+.content .pict-story h1 {    /**/
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
 
+  display: flex;
+  width: 300px;
+  height: 300px;
+  color: white;
+}
+.content .std-story {   /**/
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.main-pict-story, .pict-story {
+
+}
+
+#tuna-steak {
   background-image: url("../images/img-story-main.png");
 }
-.main-column {
-  width: 630px;
-  align-items: flex-start;
+#cats {
+  background-image: url("../images/img-story-1.png");
 }
-.sub-column {
-  width: 300px;
-  align-items: flex-start;
+#earth {
+  background-image: url("../images/img-story-2.png");
 }
+#research {
+  background-image: url("../images/img-story-3.png");
+}
+
 .sidebar {
-  width: 240px;
-  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+.column .sidebar h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+.sidebar .bites span {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  display: flex;
+  display: block;
+  flex-wrap: wrap;
 
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+}
+/************/
+/*- footer -*/
+/*Remaining Task*/
+/* copyrightで改行 */
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
 
-.footer {
-  background-color:
+  width: 100%;
+  height: 325px;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
     border: 1px solid red;
 }
 
-h1.footer-title {
+h2.footer-title {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
   color: white;
-  border-right: 1px solid white;
+  padding-right: 25px;
+  border-right: 2px solid white;
+}
+footer div.info {
+  display: inline-block;
+  padding-left: 25px;
+}
+div.info span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+footer div {
+  display: block;
+}
+footer .copyright {
+  display: block;
+}
+
+a {
+  color: black;
 }
